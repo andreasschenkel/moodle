@@ -60,8 +60,8 @@ class document_services {
     const TMP_JPG_TO_PDF_FILEAREA = 'tmp_jpg_to_pdf';
     /**  Temporary place to save PNG Image to PDF file */
     const TMP_PNG_TO_PDF_FILEAREA = 'tmp_png_to_pdf';
-    /**  Temporary place to save (Automatically) Rotated JPG FILE */
-    const TMP_ROTATED_FILEAREA = 'tmp_rotated_jpg';
+    /**  Temporary place to save (Automatically) Rotated image eg JPG FILE */
+    const TMP_ROTATED_FILEAREA = 'tmp_rotated_image';
     /** Hash of blank pdf */
     const BLANK_PDF_HASH = '4c803c92c71f21b423d13de570c8a09e0a31c718';
 
