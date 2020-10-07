@@ -212,12 +212,7 @@ EOD;
                                 }
                             }
                         } else if ($plugin->allow_image_conversion() && $mimetype === "image/png") {
-                            // Rotates image based on the EXIF value.
-                            list ($rotateddata, $size) = $file->rotate_image();
-                            if ($rotateddata) {
-                                $file = self::save_rotated_image_file($assignment, $userid, $attemptnumber,
-                                    $rotateddata, $filename);
-                            }
+                            // No rotation because png do not support EXIF value.
                             // Save as PDF file if there is no available converter.
                             if (!$converter->can_convert_format_to('png', 'pdf')) {
                                 $pdffile = self::save_png_to_pdf($assignment, $userid, $attemptnumber, $file, $size);
